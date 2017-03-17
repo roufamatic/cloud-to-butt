@@ -36,7 +36,7 @@ function handleText(textNode)
 {
 	var v = textNode.nodeValue;
 
-	v = v.replace(/\b(False|Falsehoods?)\b/g, "Bullshit);
+	v = v.replace(/\b(False|Falsehoods?)\b/g, "Bullshit");
 	v = v.replace(/\b(false|falsehoods?)\b/g, "bullshit");
 	
 	textNode.nodeValue = v;
