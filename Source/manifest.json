@@ -1,6 +1,6 @@
 {
 	"manifest_version": 2,
-	"name": "Falsehood To Bull",
+	"name": "Falsehoods To Bullshit",
 	"version": "1.0",
 	"description": "Replaces the text 'falsehood' with 'bullshit'.",
 	"content_scripts": 

@@ -24,15 +24,11 @@ function textNodesUnder(el){
 function handleText(textNode) 
 {
 	var v = textNode.nodeValue;
-
-	v = v.replace(/\bA\s([^\s+])\sFalsehood\b/g, "A Piece of $1 Bullshit");
-	v = v.replace(/\bA\s([^\s+])\sfalsehood\b/g, "A piece of $1 bullshit");
-	v = v.replace(/\ba\s([^\s+])\sFalsehood\b/g, "a piece of $1 Bullshit");
-	v = v.replace(/\ba\s([^\s+])\sfalsehood\b/g, "a piece of $1 bullshit");
+	v = v.replace(/falsehoods([^\.]+)are/g, "bullshit$1is");
 	v = v.replace(/Falsehoods?/g, "Bullshit");
 	v = v.replace(/falsehoods?/g, "bullshit");
-	v = v.replace(/\b(False)\b/g, "Full of Shit");
-	v = v.replace(/\b(false)\b/g, "full of shit");
+	v = v.replace(/\b(False)\b/g, "Full-of-Shit");
+	v = v.replace(/\b(false)\b/g, "full-of-shit");
 
 	textNode.nodeValue = v;
 }
